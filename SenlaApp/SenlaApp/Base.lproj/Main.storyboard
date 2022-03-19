@@ -41,6 +41,12 @@
                                     <action selector="buttonDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4IH-Fq-f9G"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ino-3Q-RUN">
+                                <rect key="frame" x="177.5" y="119" width="59" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -50,6 +56,8 @@
                             <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="799-Po-gOy" secondAttribute="bottom" constant="20" id="NoF-YK-PUP"/>
                             <constraint firstItem="kRS-qy-tPm" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ZW2-Lp-h33"/>
                             <constraint firstItem="g9O-ER-xaQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZdX-th-xbn"/>
+                            <constraint firstItem="ino-3Q-RUN" firstAttribute="top" secondItem="799-Po-gOy" secondAttribute="bottom" constant="16" id="bF9-3t-Aid"/>
+                            <constraint firstItem="ino-3Q-RUN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="i2l-qR-r56"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="g9O-ER-xaQ" secondAttribute="bottom" constant="20" id="iJh-k5-P78"/>
                             <constraint firstItem="799-Po-gOy" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="wFD-ez-jh9"/>
                             <constraint firstItem="799-Po-gOy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ybs-ow-WEa"/>
@@ -58,6 +66,7 @@
                     <connections>
                         <outlet property="button" destination="g9O-ER-xaQ" id="RZS-9M-n7J"/>
                         <outlet property="customView" destination="kRS-qy-tPm" id="0a7-1Y-RP7"/>
+                        <outlet property="subtitle" destination="ino-3Q-RUN" id="7Oy-vw-79K"/>
                         <outlet property="titleLabel" destination="799-Po-gOy" id="W0Y-vb-mdu"/>
                     </connections>
                 </viewController>
