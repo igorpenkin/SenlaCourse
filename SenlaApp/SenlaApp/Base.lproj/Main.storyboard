@@ -67,6 +67,7 @@
                         <outlet property="button" destination="g9O-ER-xaQ" id="RZS-9M-n7J"/>
                         <outlet property="customView" destination="kRS-qy-tPm" id="0a7-1Y-RP7"/>
                         <outlet property="subtitle" destination="ino-3Q-RUN" id="7Oy-vw-79K"/>
+                        <outlet property="subtitleLabel" destination="ino-3Q-RUN" id="ixd-yJ-57V"/>
                         <outlet property="titleLabel" destination="799-Po-gOy" id="W0Y-vb-mdu"/>
                     </connections>
                 </viewController>
