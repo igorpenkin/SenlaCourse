@@ -10,6 +10,7 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var subtitle: UILabel!
     @IBOutlet weak var customView: UIView!
     @IBOutlet weak var button: UIButton!
     //    private let uiView = UIView()
@@ -57,6 +58,8 @@ class ViewController: UIViewController {
         print("Button did tap.")
         titleLabel.text = "Ok"
         customView.backgroundColor = .green
+        subtitle.text = "Batton did tap."
+        button.isHidden = true
     }
 }
 
