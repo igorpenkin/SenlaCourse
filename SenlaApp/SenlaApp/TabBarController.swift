@@ -47,22 +47,16 @@ private extension TabBarController {
         )
         navCContent.tabBarItem = UITabBarItem(
             title: "Content",
-            image: UIImage(
-                systemName: "paperplane",
-                withConfiguration: configuration
-            ),
+            image: UIImage(systemName: "folder"),
             tag: 1
         )
-        navCInfo.tabBarItem.selectedImage = UIImage(systemName: "paperplane.fill")
+        navCContent.tabBarItem.selectedImage = UIImage(systemName: "folder.fill", withConfiguration: configuration)
         
         navCInfo.tabBarItem = UITabBarItem(
             title: "Info",
-            image: UIImage(
-                systemName: "pencil.circle",
-                withConfiguration: configuration
-            ),
+            image: UIImage(systemName: "pencil.circle"),
             tag: 1)
-        navCInfo.tabBarItem.selectedImage = UIImage(systemName: "pencil.circle.fill")
+        navCInfo.tabBarItem.selectedImage = UIImage(systemName: "pencil.circle.fill", withConfiguration: configuration)
         
         setViewControllers([
             navCContent, navCInfo
