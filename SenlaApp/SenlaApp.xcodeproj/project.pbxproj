@@ -11,11 +11,14 @@
 		3A02C7DE27EF4609001F4FF6 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A02C7DD27EF4609001F4FF6 /* NavigationController.swift */; };
 		3A02C7E027EF4647001F4FF6 /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A02C7DF27EF4647001F4FF6 /* ContentViewController.swift */; };
 		3A02C7E227EF4E08001F4FF6 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A02C7E127EF4E08001F4FF6 /* InfoViewController.swift */; };
+		3A02C7E827F87307001F4FF6 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A02C7E727F87307001F4FF6 /* InfoView.swift */; };
+		3A02C7EA27F8736E001F4FF6 /* BrowseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A02C7E927F8736E001F4FF6 /* BrowseViewController.swift */; };
+		3A02C7EC27F87394001F4FF6 /* BrowseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A02C7EB27F87394001F4FF6 /* BrowseView.swift */; };
 		3AAE1A5627E5FFFB002500A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AAE1A5527E5FFFB002500A6 /* AppDelegate.swift */; };
 		3AAE1A5827E5FFFB002500A6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AAE1A5727E5FFFB002500A6 /* SceneDelegate.swift */; };
 		3AAE1A5F27E5FFFF002500A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AAE1A5E27E5FFFF002500A6 /* Assets.xcassets */; };
 		3AAE1A6227E5FFFF002500A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AAE1A6027E5FFFF002500A6 /* LaunchScreen.storyboard */; };
-		3AAE1A6A27E60AC6002500A6 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AAE1A6927E60AC6002500A6 /* UIView.swift */; };
+		3AAE1A6A27E60AC6002500A6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AAE1A6927E60AC6002500A6 /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,13 +26,16 @@
 		3A02C7DD27EF4609001F4FF6 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		3A02C7DF27EF4647001F4FF6 /* ContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
 		3A02C7E127EF4E08001F4FF6 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		3A02C7E727F87307001F4FF6 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+		3A02C7E927F8736E001F4FF6 /* BrowseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseViewController.swift; sourceTree = "<group>"; };
+		3A02C7EB27F87394001F4FF6 /* BrowseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseView.swift; sourceTree = "<group>"; };
 		3AAE1A5227E5FFFB002500A6 /* SenlaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SenlaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AAE1A5527E5FFFB002500A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3AAE1A5727E5FFFB002500A6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		3AAE1A5E27E5FFFF002500A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3AAE1A6127E5FFFF002500A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3AAE1A6327E5FFFF002500A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3AAE1A6927E60AC6002500A6 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		3AAE1A6927E60AC6002500A6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,9 +49,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A02C7E327F87260001F4FF6 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				3A02C7E627F872A3001F4FF6 /* View */,
+				3A02C7E427F87290001F4FF6 /* Controller */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		3A02C7E427F87290001F4FF6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3A02C7DF27EF4647001F4FF6 /* ContentViewController.swift */,
+				3A02C7E127EF4E08001F4FF6 /* InfoViewController.swift */,
+				3A02C7E927F8736E001F4FF6 /* BrowseViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3A02C7E627F872A3001F4FF6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3AAE1A6927E60AC6002500A6 /* ContentView.swift */,
+				3A02C7E727F87307001F4FF6 /* InfoView.swift */,
+				3A02C7EB27F87394001F4FF6 /* BrowseView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		3AAE1A4927E5FFFB002500A6 = {
 			isa = PBXGroup;
 			children = (
+				3A02C7E327F87260001F4FF6 /* Modules */,
 				3AAE1A5427E5FFFB002500A6 /* SenlaApp */,
 				3AAE1A5327E5FFFB002500A6 /* Products */,
 			);
@@ -63,15 +99,12 @@
 			isa = PBXGroup;
 			children = (
 				3AAE1A5527E5FFFB002500A6 /* AppDelegate.swift */,
-				3AAE1A5727E5FFFB002500A6 /* SceneDelegate.swift */,
 				3AAE1A5E27E5FFFF002500A6 /* Assets.xcassets */,
-				3AAE1A6027E5FFFF002500A6 /* LaunchScreen.storyboard */,
 				3AAE1A6327E5FFFF002500A6 /* Info.plist */,
-				3AAE1A6927E60AC6002500A6 /* UIView.swift */,
-				3A02C7DB27EF45B2001F4FF6 /* TabBarController.swift */,
+				3AAE1A6027E5FFFF002500A6 /* LaunchScreen.storyboard */,
 				3A02C7DD27EF4609001F4FF6 /* NavigationController.swift */,
-				3A02C7DF27EF4647001F4FF6 /* ContentViewController.swift */,
-				3A02C7E127EF4E08001F4FF6 /* InfoViewController.swift */,
+				3AAE1A5727E5FFFB002500A6 /* SceneDelegate.swift */,
+				3A02C7DB27EF45B2001F4FF6 /* TabBarController.swift */,
 			);
 			path = SenlaApp;
 			sourceTree = "<group>";
@@ -146,11 +179,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3AAE1A6A27E60AC6002500A6 /* UIView.swift in Sources */,
+				3A02C7E827F87307001F4FF6 /* InfoView.swift in Sources */,
+				3AAE1A6A27E60AC6002500A6 /* ContentView.swift in Sources */,
+				3A02C7EC27F87394001F4FF6 /* BrowseView.swift in Sources */,
 				3A02C7DC27EF45B2001F4FF6 /* TabBarController.swift in Sources */,
 				3A02C7DE27EF4609001F4FF6 /* NavigationController.swift in Sources */,
 				3A02C7E227EF4E08001F4FF6 /* InfoViewController.swift in Sources */,
 				3AAE1A5627E5FFFB002500A6 /* AppDelegate.swift in Sources */,
+				3A02C7EA27F8736E001F4FF6 /* BrowseViewController.swift in Sources */,
 				3A02C7E027EF4647001F4FF6 /* ContentViewController.swift in Sources */,
 				3AAE1A5827E5FFFB002500A6 /* SceneDelegate.swift in Sources */,
 			);
