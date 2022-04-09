@@ -35,16 +35,14 @@ class TabBarController: UITabBarController {
 private extension TabBarController {
     
     func setupTabBar() {
-        let navCContent = NavigationController(
-            rootViewController: ContentViewController()
-        )
-        let navCInfo = NavigationController(
-            rootViewController: InfoViewController()
-        )
+        let navCContent = NavigationController(rootViewController: ContentViewController())
+        let navCInfo = NavigationController(rootViewController: InfoViewController())
+        let navCBrowse = NavigationController(rootViewController: BrowseViewController())
         
         let configuration = UIImage.SymbolConfiguration(
             pointSize: 24, weight: .semibold
         )
+        
         navCContent.tabBarItem = UITabBarItem(
             title: "Content",
             image: UIImage(systemName: "folder"),
@@ -58,8 +56,14 @@ private extension TabBarController {
             tag: 1)
         navCInfo.tabBarItem.selectedImage = UIImage(systemName: "pencil.circle.fill", withConfiguration: configuration)
         
+        navCBrowse.tabBarItem = UITabBarItem(
+            title: "Browse",
+            image: UIImage(systemName: "network"),
+            tag: 1)
+        navCBrowse.tabBarItem.selectedImage = UIImage(systemName: "network", withConfiguration: configuration)
+        
         setViewControllers([
-            navCContent, navCInfo
+            navCContent, navCInfo, navCBrowse
         ], animated: false)
     }
 }
