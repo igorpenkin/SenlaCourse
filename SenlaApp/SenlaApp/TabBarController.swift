@@ -38,6 +38,7 @@ private extension TabBarController {
         let navCContent = NavigationController(rootViewController: ContentViewController())
         let navCInfo = NavigationController(rootViewController: InfoViewController())
         let navCBrowse = NavigationController(rootViewController: BrowseViewController())
+        let navCHistory = NavigationController(rootViewController: HistoryViewController())
         
         let configuration = UIImage.SymbolConfiguration(
             pointSize: 24, weight: .semibold
@@ -62,8 +63,15 @@ private extension TabBarController {
             tag: 1)
         navCBrowse.tabBarItem.selectedImage = UIImage(systemName: "network", withConfiguration: configuration)
         
+        navCHistory.tabBarItem = UITabBarItem(
+            title: "History",
+            image: UIImage(systemName: "book.closed"),
+            tag: 1
+        )
+        navCHistory.tabBarItem.selectedImage = UIImage(systemName: "book.closed.fill", withConfiguration: configuration)
+        
         setViewControllers([
-            navCContent, navCInfo, navCBrowse
+            navCContent, navCInfo, navCBrowse, navCHistory
         ], animated: false)
     }
 }
