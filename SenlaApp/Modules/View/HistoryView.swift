@@ -115,7 +115,7 @@ private extension HistoryView {
                     configuration: .init(id: feed.id, title: feed.title, imageUrl: feed.imageUrl))
             )
         }, toSection: .ordinary)
-        snapshot.insertSections([.ordinary, .popular], beforeSection: .recent)
+
         dataSource.apply(snapshot)
     }
     

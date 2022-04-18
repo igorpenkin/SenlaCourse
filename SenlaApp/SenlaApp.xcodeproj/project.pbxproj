@@ -22,6 +22,10 @@
 		3AA8A2522801C40F004B3C3C /* RecentContentConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA8A2512801C40F004B3C3C /* RecentContentConfiguration.swift */; };
 		3AA8A2542801CB18004B3C3C /* PopularContnetConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA8A2532801CB18004B3C3C /* PopularContnetConfiguration.swift */; };
 		3AA8A2562801CB2B004B3C3C /* OrdinaryContentConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA8A2552801CB2B004B3C3C /* OrdinaryContentConfiguration.swift */; };
+		3AAAA61E280AEA3C00F363E6 /* MediaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AAAA61D280AEA3C00F363E6 /* MediaViewController.swift */; };
+		3AAAA620280AEA5600F363E6 /* MediaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AAAA61F280AEA5600F363E6 /* MediaView.swift */; };
+		3AAAA622280AEDC000F363E6 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AAAA621280AEDC000F363E6 /* UIView+Extension.swift */; };
+		3AAAA624280AEDD000F363E6 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AAAA623280AEDD000F363E6 /* UIButton+Extension.swift */; };
 		3AAE1A5627E5FFFB002500A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AAE1A5527E5FFFB002500A6 /* AppDelegate.swift */; };
 		3AAE1A5827E5FFFB002500A6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AAE1A5727E5FFFB002500A6 /* SceneDelegate.swift */; };
 		3AAE1A5F27E5FFFF002500A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AAE1A5E27E5FFFF002500A6 /* Assets.xcassets */; };
@@ -45,6 +49,10 @@
 		3AA8A2512801C40F004B3C3C /* RecentContentConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentContentConfiguration.swift; sourceTree = "<group>"; };
 		3AA8A2532801CB18004B3C3C /* PopularContnetConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularContnetConfiguration.swift; sourceTree = "<group>"; };
 		3AA8A2552801CB2B004B3C3C /* OrdinaryContentConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdinaryContentConfiguration.swift; sourceTree = "<group>"; };
+		3AAAA61D280AEA3C00F363E6 /* MediaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaViewController.swift; sourceTree = "<group>"; };
+		3AAAA61F280AEA5600F363E6 /* MediaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaView.swift; sourceTree = "<group>"; };
+		3AAAA621280AEDC000F363E6 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		3AAAA623280AEDD000F363E6 /* UIButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
 		3AAE1A5227E5FFFB002500A6 /* SenlaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SenlaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AAE1A5527E5FFFB002500A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3AAE1A5727E5FFFB002500A6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -81,6 +89,7 @@
 				3A02C7E127EF4E08001F4FF6 /* InfoViewController.swift */,
 				3A02C7E927F8736E001F4FF6 /* BrowseViewController.swift */,
 				3AA8A2452801AFC8004B3C3C /* HistoryViewController.swift */,
+				3AAAA61D280AEA3C00F363E6 /* MediaViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -92,6 +101,7 @@
 				3A02C7E727F87307001F4FF6 /* InfoView.swift */,
 				3A02C7EB27F87394001F4FF6 /* BrowseView.swift */,
 				3AA8A2472801B15F004B3C3C /* HistoryView.swift */,
+				3AAAA61F280AEA5600F363E6 /* MediaView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -100,6 +110,8 @@
 			isa = PBXGroup;
 			children = (
 				3AA8A24A2801B48D004B3C3C /* CollectionViewLayoutFactory.swift */,
+				3AAAA621280AEDC000F363E6 /* UIView+Extension.swift */,
+				3AAAA623280AEDD000F363E6 /* UIButton+Extension.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -222,6 +234,7 @@
 				3AA8A2502801BC8A004B3C3C /* HistoryCollectionItem.swift in Sources */,
 				3A02C7E827F87307001F4FF6 /* InfoView.swift in Sources */,
 				3AA8A2482801B15F004B3C3C /* HistoryView.swift in Sources */,
+				3AAAA624280AEDD000F363E6 /* UIButton+Extension.swift in Sources */,
 				3AAE1A6A27E60AC6002500A6 /* ContentView.swift in Sources */,
 				3A02C7EC27F87394001F4FF6 /* BrowseView.swift in Sources */,
 				3A02C7DC27EF45B2001F4FF6 /* TabBarController.swift in Sources */,
@@ -232,11 +245,14 @@
 				3A02C7E227EF4E08001F4FF6 /* InfoViewController.swift in Sources */,
 				3AAE1A5627E5FFFB002500A6 /* AppDelegate.swift in Sources */,
 				3A02C7EA27F8736E001F4FF6 /* BrowseViewController.swift in Sources */,
+				3AAAA620280AEA5600F363E6 /* MediaView.swift in Sources */,
 				3A02C7E027EF4647001F4FF6 /* ContentViewController.swift in Sources */,
+				3AAAA622280AEDC000F363E6 /* UIView+Extension.swift in Sources */,
 				3AA8A24B2801B48D004B3C3C /* CollectionViewLayoutFactory.swift in Sources */,
 				3AA8A2522801C40F004B3C3C /* RecentContentConfiguration.swift in Sources */,
 				3AAE1A5827E5FFFB002500A6 /* SceneDelegate.swift in Sources */,
 				3AA8A2542801CB18004B3C3C /* PopularContnetConfiguration.swift in Sources */,
+				3AAAA61E280AEA3C00F363E6 /* MediaViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
