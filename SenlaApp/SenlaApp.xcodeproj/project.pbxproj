@@ -14,6 +14,12 @@
 		3A02C7E827F87307001F4FF6 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A02C7E727F87307001F4FF6 /* InfoView.swift */; };
 		3A02C7EA27F8736E001F4FF6 /* BrowseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A02C7E927F8736E001F4FF6 /* BrowseViewController.swift */; };
 		3A02C7EC27F87394001F4FF6 /* BrowseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A02C7EB27F87394001F4FF6 /* BrowseView.swift */; };
+		3A27F36C28141ADE00DE1EB5 /* CleanPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A27F36628141ADE00DE1EB5 /* CleanPresenter.swift */; };
+		3A27F36D28141ADE00DE1EB5 /* CleanWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A27F36728141ADE00DE1EB5 /* CleanWorker.swift */; };
+		3A27F36E28141ADE00DE1EB5 /* CleanRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A27F36828141ADE00DE1EB5 /* CleanRouter.swift */; };
+		3A27F36F28141ADE00DE1EB5 /* CleanModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A27F36928141ADE00DE1EB5 /* CleanModels.swift */; };
+		3A27F37028141ADE00DE1EB5 /* CleanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A27F36A28141ADE00DE1EB5 /* CleanViewController.swift */; };
+		3A27F37128141ADE00DE1EB5 /* CleanInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A27F36B28141ADE00DE1EB5 /* CleanInteractor.swift */; };
 		3AA8A2462801AFC8004B3C3C /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA8A2452801AFC8004B3C3C /* HistoryViewController.swift */; };
 		3AA8A2482801B15F004B3C3C /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA8A2472801B15F004B3C3C /* HistoryView.swift */; };
 		3AA8A24B2801B48D004B3C3C /* CollectionViewLayoutFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA8A24A2801B48D004B3C3C /* CollectionViewLayoutFactory.swift */; };
@@ -41,6 +47,12 @@
 		3A02C7E727F87307001F4FF6 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
 		3A02C7E927F8736E001F4FF6 /* BrowseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseViewController.swift; sourceTree = "<group>"; };
 		3A02C7EB27F87394001F4FF6 /* BrowseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseView.swift; sourceTree = "<group>"; };
+		3A27F36628141ADE00DE1EB5 /* CleanPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanPresenter.swift; sourceTree = "<group>"; };
+		3A27F36728141ADE00DE1EB5 /* CleanWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanWorker.swift; sourceTree = "<group>"; };
+		3A27F36828141ADE00DE1EB5 /* CleanRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanRouter.swift; sourceTree = "<group>"; };
+		3A27F36928141ADE00DE1EB5 /* CleanModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanModels.swift; sourceTree = "<group>"; };
+		3A27F36A28141ADE00DE1EB5 /* CleanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanViewController.swift; sourceTree = "<group>"; };
+		3A27F36B28141ADE00DE1EB5 /* CleanInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanInteractor.swift; sourceTree = "<group>"; };
 		3AA8A2452801AFC8004B3C3C /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		3AA8A2472801B15F004B3C3C /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
 		3AA8A24A2801B48D004B3C3C /* CollectionViewLayoutFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewLayoutFactory.swift; sourceTree = "<group>"; };
@@ -76,6 +88,7 @@
 		3A02C7E327F87260001F4FF6 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				3A27F37228141AEC00DE1EB5 /* Clean */,
 				3A02C7E627F872A3001F4FF6 /* View */,
 				3A02C7E427F87290001F4FF6 /* Controller */,
 			);
@@ -104,6 +117,19 @@
 				3AAAA61F280AEA5600F363E6 /* MediaView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		3A27F37228141AEC00DE1EB5 /* Clean */ = {
+			isa = PBXGroup;
+			children = (
+				3A27F36628141ADE00DE1EB5 /* CleanPresenter.swift */,
+				3A27F36728141ADE00DE1EB5 /* CleanWorker.swift */,
+				3A27F36828141ADE00DE1EB5 /* CleanRouter.swift */,
+				3A27F36928141ADE00DE1EB5 /* CleanModels.swift */,
+				3A27F36A28141ADE00DE1EB5 /* CleanViewController.swift */,
+				3A27F36B28141ADE00DE1EB5 /* CleanInteractor.swift */,
+			);
+			path = Clean;
 			sourceTree = "<group>";
 		};
 		3AA8A2492801B465004B3C3C /* UIKit */ = {
@@ -233,24 +259,30 @@
 			files = (
 				3AA8A2502801BC8A004B3C3C /* HistoryCollectionItem.swift in Sources */,
 				3A02C7E827F87307001F4FF6 /* InfoView.swift in Sources */,
+				3A27F37128141ADE00DE1EB5 /* CleanInteractor.swift in Sources */,
 				3AA8A2482801B15F004B3C3C /* HistoryView.swift in Sources */,
 				3AAAA624280AEDD000F363E6 /* UIButton+Extension.swift in Sources */,
 				3AAE1A6A27E60AC6002500A6 /* ContentView.swift in Sources */,
 				3A02C7EC27F87394001F4FF6 /* BrowseView.swift in Sources */,
 				3A02C7DC27EF45B2001F4FF6 /* TabBarController.swift in Sources */,
 				3A02C7DE27EF4609001F4FF6 /* NavigationController.swift in Sources */,
+				3A27F37028141ADE00DE1EB5 /* CleanViewController.swift in Sources */,
 				3AA8A2462801AFC8004B3C3C /* HistoryViewController.swift in Sources */,
 				3AA8A2562801CB2B004B3C3C /* OrdinaryContentConfiguration.swift in Sources */,
 				3AA8A24E2801B8A4004B3C3C /* DataStore.swift in Sources */,
+				3A27F36F28141ADE00DE1EB5 /* CleanModels.swift in Sources */,
 				3A02C7E227EF4E08001F4FF6 /* InfoViewController.swift in Sources */,
+				3A27F36E28141ADE00DE1EB5 /* CleanRouter.swift in Sources */,
 				3AAE1A5627E5FFFB002500A6 /* AppDelegate.swift in Sources */,
 				3A02C7EA27F8736E001F4FF6 /* BrowseViewController.swift in Sources */,
 				3AAAA620280AEA5600F363E6 /* MediaView.swift in Sources */,
 				3A02C7E027EF4647001F4FF6 /* ContentViewController.swift in Sources */,
 				3AAAA622280AEDC000F363E6 /* UIView+Extension.swift in Sources */,
+				3A27F36D28141ADE00DE1EB5 /* CleanWorker.swift in Sources */,
 				3AA8A24B2801B48D004B3C3C /* CollectionViewLayoutFactory.swift in Sources */,
 				3AA8A2522801C40F004B3C3C /* RecentContentConfiguration.swift in Sources */,
 				3AAE1A5827E5FFFB002500A6 /* SceneDelegate.swift in Sources */,
+				3A27F36C28141ADE00DE1EB5 /* CleanPresenter.swift in Sources */,
 				3AA8A2542801CB18004B3C3C /* PopularContnetConfiguration.swift in Sources */,
 				3AAAA61E280AEA3C00F363E6 /* MediaViewController.swift in Sources */,
 			);
